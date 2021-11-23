@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: rgb(24, 24, 24);
+}
+
+.box-area {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.single-box {
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.single-box:hover {
+  transform: translateY(-10px);
+}
+
+.img-area {
+  height: 100px;
+}
+
+.single-box:nth-child(1) .img-area {
+  background: url("./bronze.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.single-box:nth-child(2) .img-area {
+  background: url("./silver.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.single-box:nth-child(3) .img-area {
+  background: url("./gold.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.single-box:nth-child(4) .img-area {
+  background: url("./platinum.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.price-area {
+  /* background-color: aqua; */
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.price {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+}
+
+.per {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.desc {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+.button-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 500;
+  width: 150px;
+  border-radius: 25px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  padding: 10px 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(116, 36, 190);
+}
+
+.single-box:nth-child(3) {
+  /* background-color: #ffa500; */
+  background-color: blueviolet;
+  color: white;
+}
+
+.single-box:nth-child(3) .button {
+  background-color: white;
+  color: blueviolet;
+}
+.single-box:nth-child(3) .button:hover {
+  background-color: rgb(211, 211, 211);
+}
